@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nikhiel Lingard — Backend Engineer in Progress</title>
+  <meta name="description" content="Portfolio of Nikhiel Lingard — backend engineer in progress, based in Paramaribo, Suriname." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,350;0,9..144,480;0,9..144,560;1,9..144,400&family=Archivo:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="./img/favicon.png">
+  <link rel="icon" href="./img/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="./img/favicon.png">
+  <meta name="theme-color" content="#2F8F7A">
+    
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <div class="bg"></div>
+  <div class="mist"></div>
+  <div class="grain"></div>
+  <div class="scanlines"></div>
+
+  <!-- NAV -->
+  <header class="top-panel" id="top-panel">
+    <a href="./index.html" class="wordmark" aria-label="Go to homepage">
+  <span class="dot"></span>
+  Nikhiel Lingard
+</a>
+
+    <nav class="links">
+      <a href="index.html" class="active">Home</a>
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="socials">
+      <a href="https://github.com/Nikhcodes/" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/nikhiel-lingard/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section class="hero">
+      <p class="hero-eyebrow">Field Recording — Side A</p>
+
+      <h1 class="hero-title">Nikhiel <em>Lingard</em></h1>
+
+      <div class="hero-stage">
+        <div class="wave left">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+
+        <div class="hero-frame">
+          <div class="hero-image"></div>
+        </div>
+
+        <div class="wave right">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+
+      <p class="hero-sub">Backend engineer in progress, recording signal from Paramaribo, Suriname.</p>
+
+      <a href="#transmission" class="scroll-cue">
+        <span class="line"></span>
+        Scroll
+      </a>
+    </section>
+
+    <!-- A1 — TRANSMISSION (intro + current roles) -->
+    <section class="reel-section reveal" id="transmission">
+      <div class="reel-head">
+        <span class="reel-num">A1</span>
+        <h2 class="reel-title">Transmission</h2>
+        <span class="rule"></span>
+      </div>
+
+      <div class="intro-grid">
+        <div>
+          <!-- EDIT: swap in your real bio -->
+          <p>I'm Nikhiel Lingard, a developer based in Paramaribo, Suriname, currently building toward the backend
+            and systems side of software — APIs, data, the infrastructure nobody notices when it's working
+            correctly. I like problems with a clear right answer hiding inside a messy one.</p>
+          <p>Outside of code I'm into music and tape culture, which is probably why this entire site is dressed
+            like a cassette sleeve.</p>
+        </div>
+
+        <div>
+          <p class="role-label">Currently</p>
+          <div class="chip-row">
+            <span class="chip is-tape">Student</span>
+            <span class="chip">Backend Engineer — In Progress</span>
+            <span class="chip">Open to Internships</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- A2 — SESSIONS (recent work experience) -->
+    <section class="reel-section reveal" id="sessions">
+      <div class="reel-head">
+        <span class="reel-num">A2</span>
+        <h2 class="reel-title">Sessions</h2>
+        <span class="rule"></span>
+      </div>
+      <p class="reel-lede">Recent work experience</p>
+
+      <!-- EDIT: replace with your real roles. Duplicate a .session-row for more entries. -->
+      <div class="session-row">
+        <span class="session-code">01</span>
+        <div>
+          <h3 class="session-role">Junior Developer</h3>
+          <p class="session-org">Company / Organization</p>
+          <p class="session-desc">Short line on what you actually did — the systems, features, or fixes you
+            shipped, not just the job title.</p>
+        </div>
+        <span class="session-meta">2025 — Present</span>
+      </div>
+
+      <div class="session-row">
+        <span class="session-code">02</span>
+        <div>
+          <h3 class="session-role">IT Support / Intern</h3>
+          <p class="session-org">Company / Organization</p>
+          <p class="session-desc">Short line on responsibilities and what you learned that's relevant to where
+            you're headed now.</p>
+        </div>
+        <span class="session-meta">2024</span>
+      </div>
+    </section>
+
+    <!-- A3 — RECORDINGS (recent projects / achievements) -->
+    <section class="reel-section reveal" id="recordings">
+      <div class="reel-head">
+        <span class="reel-num">A3</span>
+        <h2 class="reel-title">Recordings</h2>
+        <span class="rule"></span>
+      </div>
+      <p class="reel-lede">Recent projects &amp; achievements</p>
+
+      <!-- EDIT: replace with your real projects. Full list lives on work.html -->
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-thumb"></div>
+          <div class="project-top">
+            <h3 class="project-title">Project One</h3>
+            <a href="work.html" class="project-link">View →</a>
+          </div>
+          <p class="project-desc">One or two sentences on what the project does and the problem it solves.</p>
+          <div class="project-stack">
+            <span>Python</span><span>Flask</span><span>PostgreSQL</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb"></div>
+          <div class="project-top">
+            <h3 class="project-title">Project Two</h3>
+            <a href="work.html" class="project-link">View →</a>
+          </div>
+          <p class="project-desc">One or two sentences on what the project does and the problem it solves.</p>
+          <div class="project-stack">
+            <span>JavaScript</span><span>Node.js</span><span>MongoDB</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb"></div>
+          <div class="project-top">
+            <h3 class="project-title">Project Three</h3>
+            <a href="work.html" class="project-link">View →</a>
+          </div>
+          <p class="project-desc">One or two sentences on what the project does and the problem it solves.</p>
+          <div class="project-stack">
+            <span>Java</span><span>MySQL</span>
+          </div>
+        </article>
+      </div>
+
+      <a href="work.html" class="view-all">View all work →</a>
+    </section>
+
+    <!-- B1 — INSTRUMENTS (skills) -->
+    <section class="reel-section reveal" id="instruments">
+      <div class="reel-head">
+        <span class="reel-num">B1</span>
+        <h2 class="reel-title">Instruments</h2>
+        <span class="rule"></span>
+      </div>
+
+      <!-- EDIT: replace with your real skills -->
+      <div class="skill-group">
+        <h4>Languages</h4>
+        <div class="chip-row">
+          <span class="chip">Python</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">Java</span>
+          <span class="chip">SQL</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h4>Tools &amp; Frameworks</h4>
+        <div class="chip-row">
+          <span class="chip">Node.js</span>
+          <span class="chip">Flask</span>
+          <span class="chip">Git</span>
+          <span class="chip">PostgreSQL</span>
+          <span class="chip">Docker</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h4>Currently Learning</h4>
+        <div class="chip-row">
+          <span class="chip is-tape">System Design</span>
+          <span class="chip is-tape">REST APIs</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-brand">Nikhiel Lingard</p>
+        <p class="footer-tagline">Backend engineer in progress, recording signal from Paramaribo, Suriname.</p>
+        <a href="contact.html" class="footer-cta">Start a conversation →</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Site</h5>
+        <a href="index.html">Home</a>
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Elsewhere</h5>
+        <a href="https://github.com/Nikhcodes/" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/nikhiel-lingard/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="footer-fine">
+      <span>© 2026 Nikhiel Lingard</span>
+      <span>Side A — End of Reel</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — Nikhiel Lingard</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,350;0,9..144,480;0,9..144,560;1,9..144,400&family=Archivo:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="./img/favicon.png">
+  <link rel="icon" href="./img/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="./img/favicon.png">
+
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/contact.css">
+</head>
+
+<body>
+
+  <div class="bg"></div>
+  <div class="mist"></div>
+  <div class="grain"></div>
+  <div class="scanlines"></div>
+
+  <!-- NAV -->
+  <header class="top-panel" id="top-panel">
+    <a href="./index.html" class="wordmark" aria-label="Go to homepage">
+  <span class="dot"></span>
+  Nikhiel Lingard
+</a>
+
+    <nav class="links">
+      <a href="./index.html">Home</a>
+      <a href="./work.html">Work</a>
+      <a href="./about.html">About</a>
+      <a href="./contact.html" class="active">Contact</a>
+    </nav>
+
+    <div class="socials">
+      <a href="https://github.com/Nikhcodes/" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/nikhiel-lingard/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+
+    <button class="nav-toggle" id="nav-toggle">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="contact-hero">
+      <p class="hero-eyebrow">Side D — Transmission Out</p>
+      <h1 class="contact-title">Send a <em>signal</em></h1>
+      <p class="contact-sub">
+        Got a project, internship, or idea? Drop a message below and I’ll get back to you.
+      </p>
+    </section>
+
+    <!-- FORM -->
+    <section class="reel-section reveal">
+
+      <div class="contact-grid">
+
+        <form class="contact-form" id="contact-form">
+          <label>
+            Name
+            <input type="text" name="name" required />
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+
+          <label>
+            Message
+            <textarea name="message" rows="6" required></textarea>
+          </label>
+
+          <button type="submit">Transmit Message →</button>
+
+          <p class="form-status" id="form-status"></p>
+        </form>
+
+        <div class="contact-side">
+          <div class="contact-card">
+            <h3>Direct Channels</h3>
+            <p>Prefer direct contact?</p>
+
+            <a href="mailto:youremail@example.com">youremail@example.com</a>
+
+            <div class="contact-links">
+              <a href="https://github.com/" target="_blank">GitHub</a>
+              <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+            </div>
+          </div>
+
+          <div class="contact-note">
+            <p>
+              I usually respond within a few days depending on workload and projects.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="./js/main.js"></script>
+  <script src="./js/contact.js"></script>
+
+</body>
+</html>
