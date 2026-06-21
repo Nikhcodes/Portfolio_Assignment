@@ -117,3 +117,68 @@ const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)
   targets.forEach(t => observer.observe(t));
 })();
 
+
+const audio = document.getElementById("bg-music");
+const heroImage = document.querySelector(".hero-image");
+
+const tracks = [
+  "music/music1.mp3",
+  "music/music2.mp3",
+  "music/music3.mp3"
+];
+
+let currentTrack = 0;
+let isPlaying = false;
+let clickTimer = null;
+
+function loadTrack(index) {
+  audio.src = tracks[index];
+  audio.load();
+  updateFreqUI();
+}
+
+function playTrack() {
+  audio.play().catch(err => {
+    console.log("Audio blocked until user gesture:", err);
+  });
+}
+
+heroImage.addEventListener("click", () => {
+  // delay click to detect double-click
+  if (clickTimer) return;
+
+  clickTimer = setTimeout(() => {
+    clickTimer = null;
+
+    if (!audio.src) loadTrack(currentTrack);
+
+    if (isPlaying) {
+      audio.pause();
+      isPlaying = false;
+    } else {
+      playTrack();
+      isPlaying = true;
+    }
+  }, 250);
+});
+
+heroImage.addEventListener("dblclick", () => {
+  clearTimeout(clickTimer);
+  clickTimer = null;
+
+  currentTrack = (currentTrack + 1) % tracks.length;
+  loadTrack(currentTrack);
+
+  if (isPlaying) {
+    playTrack();
+  }
+});
+const freqValue = document.getElementById("freq-value");
+function updateFreqUI() {
+  const current = String(currentTrack + 1).padStart(2, "0");
+  const total = String(tracks.length).padStart(2, "0");
+
+  if (freqValue) {
+    freqValue.textContent = `${current} / ${total}`;
+  }
+}

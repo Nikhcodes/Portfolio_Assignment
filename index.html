@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-
+ 
   <div class="bg"></div>
   <div class="mist"></div>
   <div class="grain"></div>
@@ -49,32 +49,53 @@
 
   <!-- HERO -->
   <main>
-    <section class="hero">
-      <p class="hero-eyebrow">Field Recording — Side A</p>
+  <section class="hero">
+    <p class="hero-eyebrow">Field Recording — Side A</p>
 
-      <h1 class="hero-title">Nikhiel <em>Lingard</em></h1>
+    <h1 class="hero-title">Nikhiel <em>Lingard</em></h1>
 
-      <div class="hero-stage">
-        <div class="wave left">
-          <span></span><span></span><span></span><span></span><span></span>
-        </div>
+    <div class="hero-stage">
+      
 
-        <div class="hero-frame">
-          <div class="hero-image"></div>
-        </div>
-
-        <div class="wave right">
-          <span></span><span></span><span></span><span></span><span></span>
-        </div>
+      <!-- NEW: floating music notes layer -->
+       <audio id="bg-music" loop>
+        <source src="music/music1.mp3" type="audio/mpeg">
+        </audio>
+      <div class="music-notes" aria-hidden="true">
+        <span class="note">♪</span>
+        <span class="note">♫</span>
+        <span class="note">♩</span>
+        <span class="note">♪</span>
+        <span class="note">♫</span>
       </div>
 
-      <p class="hero-sub">Backend engineer in progress, recording signal from Paramaribo, Suriname.</p>
+      <div class="wave left">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
 
-      <a href="#transmission" class="scroll-cue">
-        <span class="line"></span>
-        Scroll
-      </a>
-    </section>
+      <div class="hero-frame">
+        <div class="hero-image"></div>
+      </div>
+      
+      <div class="wave right">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+
+    </div>
+      <div class="freq-indicator">
+          <span class="freq-label">FREQ</span>
+          <span class="freq-value" id="freq-value">01 / 03</span>
+          <span class="freq-hint">dbl click → retune</span>
+      </div>
+    <p class="hero-sub">
+      Backend engineer in progress, recording signal from Paramaribo, Suriname.
+    </p>
+
+    <a href="#transmission" class="scroll-cue">
+      <span class="line"></span>
+      Scroll
+    </a>
+  </section>
 
     <!-- A1 — TRANSMISSION (intro + current roles) -->
     <section class="reel-section reveal" id="transmission">
@@ -111,7 +132,7 @@
       </div>
     </section>
 
-    <!-- Work experience -->
+    <!-- Work experience --> 
     <section class="reel-section reveal" id="sessions">
       <div class="reel-head">
         <span class="reel-num">A2</span>
@@ -317,6 +338,7 @@
   </footer>
 
   <script src="js/main.js"></script>
+  
 </body>
 
 </html>
