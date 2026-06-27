@@ -43,6 +43,9 @@ html {
   --tape-soft:   rgba(177, 80, 47, 0.14);
   --line:        rgba(22, 28, 32, 0.10);
   --line-strong: rgba(22, 28, 32, 0.18);
+  --ink-inverse:     #F7FAFC;
+  --ink-inverse-soft:#DCE6EE;
+  --ink-inverse-faint:#B8C6D3;
 
   /* type */
   --f-display: 'Fraunces', 'Georgia', serif;
@@ -284,7 +287,7 @@ textarea:focus-visible {
   font-size: 11px;
   letter-spacing: 4px;
   text-transform: uppercase;
-  color: var(--ink-soft);
+  color: var(--paper-glass);
   display: flex;
   align-items: center;
   gap: 10px;
@@ -390,7 +393,7 @@ textarea:focus-visible {
 .hero-sub {
   max-width: 480px;
   font-size: 14px;
-  color: var(--ink-soft);
+  color: var(--paper-glass);
 }
 
 .scroll-cue {
@@ -537,7 +540,7 @@ textarea:focus-visible {
 
 .intro-grid p {
   font-size: clamp(15px, 1.6vw, 18px);
-  color: var(--ink-soft);
+  color: var(--ink);
   max-width: 56ch;
 }
 
@@ -659,7 +662,7 @@ textarea:focus-visible {
   transform: translateY(-4px);
 }
 
-.project-thumb {
+.project-thumb img{
   width: 100%;
   aspect-ratio: 16 / 10;
   border-radius: 1px;
