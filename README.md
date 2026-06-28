@@ -7,7 +7,7 @@ This is a minimalist portfolio website created as a school assignment. The conce
 This is version 0.1 of the project and is still in development, with content and personal details expected to be updated over time to better reflect my work and identity.
 
 The live version of the project can be viewed here:
-https://nikhcodes.github.io/Portfolio_Assignment/
+https://nikhcodes.github.io/
 
 ## Design Concept
 
